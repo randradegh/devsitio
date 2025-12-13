@@ -59,7 +59,7 @@ export default function ServicioDetail() {
             </p>
             <Link
               to="/contacto"
-              className="px-8 py-4 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-lg font-semibold hover:shadow-xl hover:shadow-primary-500/50 transition-all transform hover:scale-105 inline-block"
+              className="px-8 py-4 bg-gradient-to-r from-primary-500 to-blue-900 text-white rounded-lg font-semibold hover:shadow-xl hover:shadow-primary-500/50 transition-all transform hover:scale-105 inline-block"
             >
               Agenda una llamada
             </Link>
@@ -200,7 +200,7 @@ export default function ServicioDetail() {
       </section>
 
       {/* CTA final */}
-      <section className="py-32 bg-gradient-to-r from-primary-500 via-accent-500 to-primary-500 text-white relative overflow-hidden">
+      <section className="py-32 bg-gradient-to-r from-primary-500 via-accent-500 to-blue-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_70%)]"></div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">

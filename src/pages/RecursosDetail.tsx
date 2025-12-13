@@ -108,7 +108,7 @@ export default function RecursosDetail() {
             </Link>
             <Link
               to="/contacto"
-              className="px-6 py-3 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-lg font-semibold hover:shadow-xl hover:shadow-primary-500/50 transition-all"
+              className="px-6 py-3 bg-gradient-to-r from-primary-500 to-blue-900 text-white rounded-lg font-semibold hover:shadow-xl hover:shadow-primary-500/50 transition-all"
             >
               ¿Tienes preguntas? Contacta
             </Link>

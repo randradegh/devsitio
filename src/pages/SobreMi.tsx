@@ -132,7 +132,7 @@ export default function SobreMi() {
       </section>
 
       {/* CTA */}
-      <section className="py-32 bg-gradient-to-r from-primary-500 via-accent-500 to-primary-500 text-white relative overflow-hidden">
+      <section className="py-32 bg-gradient-to-r from-primary-700 to-blue-950 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_70%)]"></div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">

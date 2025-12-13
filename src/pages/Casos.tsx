@@ -70,7 +70,7 @@ export default function Casos() {
           </p>
           <Link
             to="/contacto"
-            className="px-8 py-4 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-lg font-semibold hover:shadow-xl hover:shadow-primary-500/50 transition-all transform hover:scale-105 inline-block"
+            className="px-8 py-4 bg-gradient-to-r from-primary-500 to-blue-900 text-white rounded-lg font-semibold hover:shadow-xl hover:shadow-primary-500/50 transition-all transform hover:scale-105 inline-block"
           >
             Contacta conmigo
           </Link>

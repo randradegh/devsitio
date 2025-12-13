@@ -148,7 +148,7 @@ export default function Contacto() {
                   <button
                     type="submit"
                     disabled={enviando}
-                    className="w-full px-6 py-4 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-lg font-semibold hover:shadow-xl hover:shadow-primary-500/50 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full px-6 py-4 bg-gradient-to-r from-primary-500 to-blue-900 text-white rounded-lg font-semibold hover:shadow-xl hover:shadow-primary-500/50 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {enviando ? 'Enviando...' : 'Enviar mensaje'}
                   </button>
@@ -167,7 +167,7 @@ export default function Contacto() {
                 href={calendlyUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full px-6 py-4 bg-gradient-to-r from-accent-500 to-accent-600 text-white rounded-lg font-semibold hover:shadow-xl hover:shadow-accent-500/50 transition-all text-center mb-8"
+                className="block w-full px-6 py-4 bg-gradient-to-r from-accent-500 to-blue-900 text-white rounded-lg font-semibold hover:shadow-xl hover:shadow-accent-500/50 transition-all text-center mb-8"
               >
                 Abrir calendario →
               </a>

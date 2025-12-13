@@ -40,7 +40,7 @@ export default function Navbar() {
             ))}
             <Link
               to="/contacto"
-              className="px-4 py-2 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-full text-sm font-medium hover:shadow-lg hover:shadow-primary-500/50 transition-all"
+              className="px-4 py-2 bg-gradient-to-r from-primary-500 to-blue-900 text-white rounded-full text-sm font-medium hover:shadow-lg hover:shadow-primary-500/50 transition-all"
             >
               Agenda una llamada
             </Link>
@@ -98,7 +98,7 @@ export default function Navbar() {
               <Link
                 to="/contacto"
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-2 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-md text-base font-medium text-center"
+                className="block px-3 py-2 bg-gradient-to-r from-primary-500 to-blue-900 text-white rounded-md text-base font-medium text-center"
               >
                 Agenda una llamada
               </Link>
