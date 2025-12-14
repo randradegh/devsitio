@@ -33,7 +33,9 @@ Si el método 1 no funciona:
 4. **Haz clic en "Deploy"**
 5. **NO marques "Use existing Build Cache"** si aparece la opción
 
-### Método 3: Usar Vercel CLI (Si tienes acceso)
+### Método 3: Usar Vercel CLI (✅ FUNCIONA - RECOMENDADO)
+
+**Este es el método que realmente funciona cuando el dashboard no detecta cambios automáticamente.**
 
 ```bash
 # Instalar Vercel CLI si no lo tienes
@@ -45,9 +47,14 @@ vercel login
 # Ir al directorio del proyecto
 cd /run/media/randrade/baul/respaldos/proyectos/empresa/devsite_raf
 
-# Forzar deploy desde el commit actual
+# Forzar deploy desde el commit actual (SIN caché)
 vercel --prod --force
+
+# O si quieres especificar sin caché explícitamente:
+vercel --prod --force --no-cache
 ```
+
+**Nota**: Este método fuerza un deploy completo desde el código local/Git actual, ignorando cualquier caché de Vercel.
 
 ### Método 4: Desconectar y Reconectar el Repositorio (Último recurso)
 
