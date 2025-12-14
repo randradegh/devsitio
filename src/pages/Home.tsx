@@ -15,7 +15,7 @@ const segmentos = [
   },
   {
     title: 'Equipos de Marketing',
-    description: 'Multiplica tu producción de contenido 10x con Gen AI. Automatiza campañas, personaliza mensajes y escala sin aumentar costos.',
+    description: 'Multiplica tu producción de contenido 10x con Inteligencia Artificial Generativa (Gen AI). Automatiza campañas, personaliza mensajes y escala sin aumentar costos.',
     icon: 'megaphone' as const,
     color: 'purple' as const,
   },
@@ -27,7 +27,7 @@ const segmentos = [
   },
   {
     title: 'Equipos Técnicos',
-    description: 'Acelera desarrollo con arquitecturas escalables y agentes de IA que resuelven problemas complejos. Menos bugs, más velocidad.',
+    description: 'Desarrollo más rápido con arquitecturas escalables y agentes de IA diseñados para problemas complejos. Menos fallos, más entrega.',
     icon: 'code' as const,
     color: 'blue' as const,
   },
@@ -185,7 +185,7 @@ export default function Home() {
             Para quién trabajo
           </h2>
           <p className="text-center text-gray-400 mb-16 max-w-2xl mx-auto text-base">
-            Si buscas resultados reales, no solo tecnología, trabajamos juntos
+          Más que tecnología: resultados reales, en colaboración.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {segmentos.map((segmento, index) => (
