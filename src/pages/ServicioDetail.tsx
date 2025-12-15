@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import IconCircle from '../components/IconCircle'
 import { servicios } from '../data/servicios'
 import { casos } from '../data/casos'
+import modeloER from '../assets/images/servicios/modelo-er_nlm.jpg'
 
 const servicioIconMap: Record<string, { icon: 'globe' | 'robot' | 'database' | 'book' | 'megaphone', color: 'blue' | 'green' | 'purple' }> = {
   'sitios-web-pymes': { icon: 'globe', color: 'blue' },
@@ -146,6 +147,61 @@ export default function ServicioDetail() {
           </div>
         </div>
       </section>
+
+      {/* Modelo ER - Solo para PostgreSQL */}
+      {servicio.slug === 'datos-postgresql' && (
+        <section className="py-32 bg-dark-900 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-green-950/20 via-transparent to-transparent"></div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-100 tracking-tight">
+                Diseño de un <span className="text-green-400">Modelo ER</span>
+              </h2>
+              <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+                Un modelo entidad-relación bien diseñado es la base de una base de datos escalable y eficiente.
+                Aquí tienes un imagen que explica el concepto del diseño de un modelo ER profesional.
+              </p>
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative"
+            >
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl border-2 border-green-500/30 bg-dark-950/50 backdrop-blur-sm">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 via-transparent to-blue-500/10"></div>
+                <div className="relative p-4 sm:p-6 lg:p-8">
+                  <img
+                    src={modeloER}
+                    alt="Modelo Entidad-Relación PostgreSQL"
+                    className="w-full h-auto rounded-lg shadow-xl"
+                  />
+                </div>
+                <div className="absolute top-4 right-4 bg-green-500/90 backdrop-blur-sm text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">
+                  PostgreSQL
+                </div>
+              </div>
+              
+              <div className="mt-8 text-center">
+                <div className="inline-flex items-center gap-2 px-6 py-3 bg-dark-900/70 border border-green-500/30 rounded-lg backdrop-blur-sm">
+                  <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-gray-300 text-sm">
+                    Modelo optimizado para rendimiento y escalabilidad
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+      )}
 
       {/* Mini caso relacionado */}
       {casoRelacionado && (

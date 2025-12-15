@@ -1,0 +1,2 @@
+# Directorio para imágenes importadas en componentes
+# Las imágenes aquí se importan: import imagen from '../assets/images/nombre-imagen.jpg'
